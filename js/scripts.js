@@ -25,14 +25,21 @@ $(document).ready(function() {
     sentenceArray.sort();
     lastCount = 0;
     lastWord = "";
+    let wordCountArray = [];
     sentenceArray.forEach(function(word) {
       if (word === lastWord) {
         lastCount += 1;
       } else {
-        $("#result").append("<li>" + lastWord + " - " + lastCount);
+        wordCountArray.push([lastCount, lastWord]);
+        // $("#result").append("<li>" + lastWord + " - " + lastCount);
         lastWord = word;
         lastCount = 1;
       }
+    });
+    wordCountArray.sort();
+    wordCountArray.reverse()
+    wordCountArray.forEach(function(wordArray) {
+      $("#result").append("<li>" + wordArray[1] + " - " + wordArray[0] + "</li>");
     });
   });
 });
