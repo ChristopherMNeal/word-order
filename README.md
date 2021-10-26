@@ -1,8 +1,8 @@
-# _ _
+# _Word Counter_
 
-#### By _**Christopher Neal &**_
+#### By _**Christopher Neal**_
 
-#### _ _
+#### _Word Counter_
 
 ## Technologies Used
 
@@ -14,7 +14,7 @@
 
 ## Description
 
-_This page practices_
+_This page takes text input and returns a count of each word used, organized from most common to least common words._
 
 ## Setup/Installation Requirements
 
@@ -29,4 +29,4 @@ _None_
 
 _[MIT](https://opensource.org/licenses/MIT)_
 
-Copyright (c) _21 October 2021_ _Christopher Neal &_
+Copyright (c) _25 October 2021_ _Christopher Neal_
