@@ -9,13 +9,15 @@ $(document).ready(function() {
     textString = textString.toLowerCase();
     let eachChar = textString.split("");
     const punctArray = [",", ".", ";", ":", "?", "!", "-"];
-    let noPunctArray = [];
+    if (punctArray.includes(eachChar.at(-1))) {
+      eachChar.pop();
+    }
     eachChar.forEach(function(char) {
       if (punctArray.includes(char)) {
         console.log(char);
         console.log(eachChar.indexOf(char));
         eachChar.splice(eachChar.indexOf(char), 1);
-      }
+      } 
     });
     let newTextString = eachChar.join("")
     console.log(newTextString);
